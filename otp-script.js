@@ -4,7 +4,7 @@ const state = {
 
 async function init() {
   const libJS = document.createElement('script')
-  libJS.src = 'https://sandbox.src.mastercard.com/srci/integration/2/lib.js'
+  libJS.src = 'https://stage.src.mastercard.com/srci/integration/2/lib.js'
   await document.body.appendChild(libJS)
   libJS.addEventListener('load', async function() {
     const c2p = new window.Click2Pay({debug: true })
